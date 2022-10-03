@@ -1,0 +1,41 @@
+---
+title: "Final Project Data Memo"
+author: "Helena Hu"
+date: "2022-10-02"
+output: html_document
+---
+## Overview of Dataset
+
+### Source
+* The dataset of Bitcoin can be found on Yahoo Finance. [link](https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD)
+* The dataset include the daily historical prices from 2017-10-1 to 2022-10-1, in total of 1828 observations and 6 predictors.
+* The dataset does not have any missing data, it includes all data of every single day from the beginning date.
+
+### Variables
+The variables included in the data set and their type and descriptions are listed as follows:  
+
+Variables | Type | Descriptions
+:-------- | :--- | :-----------
+Open | double | The price at the beginning of a trading day
+High | double | The highest price of the day
+Low  | double | The lowest price of the day
+Close | double | The price at the end of a trading day
+Volume | double | The amount of Bitcoin being traded of the day
+
+## Research Question
+* I'm interested in predicting the Bitcoin price. Knowing whether it will increase or decrease and how much exactly will it change in the future will help us deciding the optimal way to trade Bitcoins. The response variable will be names as Average, which means the average Bitcoin price on given day.
+* These research questions above will be best answered by regression model since we want to know the price, which is numeric and cannot be categorized in to different class.
+* The predictor variable include "Open", "High", "Close", and "Low" will be especially helpful since the daily price data could help me knowing the price change and therefore help determine the trend.
+* The goal of the model will be descriptive and predictive combined, since we want to know the trend of the Bitcoin price, which will be fitted by descriptive model well as it emphasize the trend of data. Also, I want to predict Bitcoin price as accurate as possible, so predictive model is also useful.
+
+## Proposed Project Timeline
+Week | Plan
+:--- | :---
+2 | Load data set and begin exploratory data analysis
+3 - 6 | Set up and build models
+7 - 9 | Analyze the models
+10 | Finalize project paper
+
+## Questions & Concerns
+I was concerned about whether the response variable, the average price of the day, is the good way to represent the Bitcoin price. I still thinking about a better one to represent.
+
