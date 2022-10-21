@@ -1,0 +1,46 @@
+---
+title: "Final Project Data Memo"
+author: "Helena Hu"
+date: "2022-10-02"
+output: html_document
+---
+## Overview of Dataset
+
+### Source
+* The dataset of California Housing Price can be found on Kaggle. [link](https://www.kaggle.com/datasets/fedesoriano/california-housing-prices-data-extra-features)
+* The dataset include the relevant information of house located at different blocks in California, in total of 20640 observations and 14 predictors.
+* The dataset does not have any missing data.
+
+### Variables
+The variables included in the data set and their type and descriptions are listed as follows:  
+
+Variables | Type | Descriptions | Measurement Units
+:-------- | :--- | :----------- | :----------------
+Median_House_Value | double | Median house value for households within a block | US Dollars
+Median_Income | double | Median income for households within a block of houses | Tens of thousands of US Dollars
+Median_Age | double | Median age of a house within a block | Years
+Tot_Rooms | double | Total number of rooms within a block | Rooms
+Tot_Bedrooms | double | Total number of bedrooms within a block | Rooms
+Population | double | Total number of people residing within a block
+Households | double | Total number of households within a block
+Latitude | double | A measure of how far north a house is; a higher value is farther north | Degrees
+Longitude | double | A measure of how far west a house is; a higher value is farther west | Degrees
+Distance_to_coast | double | Distance to the nearest coast point | Meters
+Distance_to_LA | double | Distance to the centre of Los Angeles | Meters
+Distance_to_Sandiego | double | Distance to the centre of San Diego | Meters
+Distance_to_SanJose | double | Distance to the centre of San Jose | Meters
+Distance_to_SanFrancisco | double | Distance to the centre of San Francisco | Meters
+
+## Research Question
+* I'm interested in predicting the price of California House. The response variable will be names as Median_Price, which means the median  price within the block.
+* These research questions above will be best answered by regression model since we want to know the price, which is numeric and cannot be categorized in to different class.
+* The predictor variable include "Distance_to_coast", "Distance_to_LA", "Distance_to_SanJose", and "Distance_to_SanFrancisco" will be especially helpful since the location is an important factor determine the price of the house. Those house that are close to the major city normally tend to have higher value. 
+* The goal of the model will be predictive, since I want to predict house price as accurate as possible.
+
+## Proposed Project Timeline
+Week | Plan
+:--- | :---
+2 | Load data set and begin exploratory data analysis
+3 - 6 | Set up and build models
+7 - 9 | Analyze the models
+10 | Finalize project paper
